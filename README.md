@@ -185,6 +185,9 @@ ourKairos is fully open-source and welcomes contributors across **Web2**, **Web3
 
 ---
 
+## Reference templates
+
+The repository includes merge-safe Express observability templates in `tooling/express-observability-template`.
 
 ### Resources
 
