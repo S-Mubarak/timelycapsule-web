@@ -1,20 +1,17 @@
 {
   "name": "ourkairos",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "turbo dev",
-    "build": "turbo build",
-    "lint": "turbo lint",
-    "test": "turbo test",
-    "clean": "rm -rf node_modules **/*/node_modules"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "private": true,
+  "version": "0.1.0",
+  "description": "ourKairos monorepo workspace",
   "packageManager": "pnpm@10.14.0",
-  "devDependencies": {
-    "turbo": "^2.7.6"
+  "scripts": {
+    "check:workspace": "node ./scripts/validate-workspace.mjs",
+    "build": "pnpm run check:workspace",
+    "lint": "pnpm run check:workspace",
+    "typecheck": "pnpm run check:workspace",
+    "test": "pnpm run check:workspace"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
